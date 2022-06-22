@@ -3,7 +3,7 @@
 		<view :class="[direction==='column'?'uni-steps__column':'uni-steps__row']">
 			<view :class="[direction==='column'?'uni-steps__column-text-container':'uni-steps__row-text-container']">
 				<view v-for="(item,index) in options" :key="index"
-					:class="[direction==='column'?'uni-steps__column-text':'uni-steps__row-text']">
+					:class="[direction==='column'?'uni-steps__column-text':'uni-steps__row-text']" @tap.stop="$emit('kg-click', index)">
 					<text :style="{color:index === active?activeColor:deactiveColor}"
 						:class="[direction==='column'?'uni-steps__column-title':'uni-steps__row-title']">{{item.title}}</text>
 					<text :style="{color: deactiveColor}"

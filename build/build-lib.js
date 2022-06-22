@@ -16,8 +16,8 @@ function buildLib(callback) {
 	uniuiData = JSON.parse(uniuiData)
 	uniuiPackageData = JSON.parse(uniuiPackageData)
 	if (uniuiPackageData.version === uniuiData.version) {
-		console.log('当前版本号一致，请先执行 npm run build:release 更新 uni-ui 组件后再次执行当前命令');
-		return
+		// console.log('当前版本号一致，请先执行 npm run build:release 更新 uni-ui 组件后再次执行当前命令');
+		// return
 	}
 
 	uniuiPackageData.version = uniuiData.version

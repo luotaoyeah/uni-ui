@@ -1,7 +1,7 @@
 {
 	"id": "55",
 	"name": "@dcloudio/uni-ui",
-	"version": "1.4.16",
+	"version": "1.4.16-beta.2",
 	"description": "",
 	"author": "dcloud",
 	"license": "Apache-2.0",
@@ -15,6 +15,7 @@
 		"build:release": "node build/index.js release",
 		"build:readme": "node build/index.js readme",
 		"dev:docs": "vuepress dev docs",
+		"publish:npm": "npmrc thymine && npm publish ./packages --registry https://registry.npmjs.org/ --access public",
 		"build:docs": "vuepress build docs"
 	},
 	"dependencies": {},
